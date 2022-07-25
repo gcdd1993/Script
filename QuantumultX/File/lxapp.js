@@ -17,6 +17,7 @@ obj.data[0]["checkResult"] = 1
 obj.data[0]["samplingTime"] = ts
 obj.data[0]["collectTime"] = ts
 obj.data[0]["isInTimeRange"] = true
+obj.data[0]["collectionBatchName"] = "地铁站"
 
 body = JSON.stringify(obj);
 console.log(body)
