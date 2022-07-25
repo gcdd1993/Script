@@ -13,11 +13,10 @@ var body = $response.body;
 var obj = JSON.parse(body);
 
 var ts = new Date().getTime() - 60 * 1000 * 60
-obj.data[0]["checkResult"] = 1
+obj.data[0]["checkResult"] = 2
 obj.data[0]["samplingTime"] = ts
 obj.data[0]["collectTime"] = ts
 obj.data[0]["isInTimeRange"] = true
-obj.data[0]["collectionBatchName"] = "地铁站"
 
 body = JSON.stringify(obj);
 console.log(body)
