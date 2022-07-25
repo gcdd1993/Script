@@ -3,7 +3,7 @@
 QuantumultX:
 
 [rewrite_local]
-^https?:\/\/gateway-lx\.internetofcity\.cn\/nucleic-result\?method=checkReportList url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/wnyd.js
+^https?:\/\/gateway-lx\.internetofcity\.cn\/nucleic-result\?method=checkReportList url script-response-body https://raw.githubusercontent.com/gcdd1993/Script/master/QuantumultX/File/lxapp.js
 
 [mitm]
 hostname = gateway-lx.internetofcity.cn
@@ -18,4 +18,5 @@ obj.data[0]["samplingTime"] = ts
 obj.data[0]["collectTime"] = ts
 
 body = JSON.stringify(obj);
+console.log(body)
 $done({body});
