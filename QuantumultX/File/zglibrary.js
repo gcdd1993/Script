@@ -18,6 +18,8 @@ obj.data = {
     "isExpire": 0,
     "isVip": 1
 }
+obj.sign = ""
+obj.nonce = ""
 
 body = JSON.stringify(obj);
 console.log(body)
